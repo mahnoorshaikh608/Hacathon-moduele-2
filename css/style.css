@@ -22,42 +22,25 @@
 
 /* hero section */
 
-.hero {
+.login-links{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
+    gap: 20px;
+    justify-items: right;
 }
 
-.hero-text {
-    width: 45%;
-}
 
-.hero-text h1 {
-    font-size: 45px;
-    color: #198754;
-}
 
-.hero-text p {
-    font-size: 20px;
-    line-height: 1.6;
-    margin: 20px 0;
-}
 
-.hero-text button {
-    background-color: #198754;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 6px;
-    font-size: 16px;
-}
-
-.hero-image {
-    width: 45%;
-}
-
-.hero-image img {
+.big-input {
     width: 100%;
-    border-radius: 20px;
+    height: 70px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    box-sizing: border-box;
 }
+
+/* cards */
+
+

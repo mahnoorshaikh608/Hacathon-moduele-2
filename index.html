@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecipeHub</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
-    
-<!-- navbar start -->
-<header>
+
+    <!-- navbar start -->
+    <header>
         <nav class="navbar">
 
             <h2>🍴 RecipeHub</h2>
-    
-                  <div class="links">
-                      <a href="Home" class="btn btn-outline-success">Home</a>
-                      <a href="recipes.html" class=" btn btn-outline-success">All-recipe</a>
-                      <a href="my-recipe.html" class=" btn btn-outline-success">my-recipe</a>
-                      <a href="login.html" class="btn btn-outline-success">login</a>
-                      <a href="signup.html" class=" btn btn-outline-success">Signup</a>
-                  </div>
-              </nav>
-    
+
+            <div class="links">
+                <a href="index.html" class="btn btn-outline-success">Home</a>
+                <a href="recipes.html" class=" btn btn-outline-success">All-recipe</a>
+                <a href="login.html" class="btn btn-outline-success">login</a>
+                <a href="signup.html" class=" btn btn-outline-success">Signup</a>
+            </div>
         </nav>
-</header>
-<!-- navbar end -->
 
-<!-- hero section start -->
+        </nav>
+    </header>
+    <!-- navbar end -->
 
-
-<section class="hero">
-
-    <div class="hero-text">
-        <h1>Good Food Brings People Together</h1>
-
-        <p>
-            Discover, cook and share your favorite
-            recipes with food lovers around the world.
-        </p>
-
-        <button>Explore Recipes</button>
-    </div>
-
-    <div class="hero-image">
-        <img src="burger.jpg" alt="Delicious Burger">
-    </div>
-
-</section>
-
-<!-- hero section end -->
+    <!-- hero section start -->
 
 
-<!-- links -->
+
+    <section class="hero">
+        <div class="container-fluid col-xxl-8 px-4 py-5 bgpurple">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./images.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500"
+                        height="500" loading="lazy" />
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">
+                        Good Food Brings People Together
+                    </h1>
+
+                    <p class="lead">
+                        Discover, cook and share your favorite
+                        recipes with food lovers around the world.
+                    </p>
+
+                    <a href="recipes.html" class="btn btn-outline-success">Explore Recipes</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero section end -->
+
+
+    <!-- links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
