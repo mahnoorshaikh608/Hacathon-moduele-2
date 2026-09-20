@@ -50,3 +50,60 @@
 /* cards */
 
 
+.search-box {
+  display: flex;
+  gap: 10px;
+  width: 500px;
+  margin: 20px auto;
+  color: black;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: burlywood;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgb(2, 41, 2);
+}
+
+.your{
+    justify-content: center;
+    display: flex;
+}
+
+
+.options {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 0 10px gray;
+}
+
+.options button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dashboard{
+    justify-content: center;
+    display: flex;
+}
+
+
+.dashboard-btn{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: wheat;
+    border-radius: 0;
+    background-color:rgb(2, 48, 2);
+}

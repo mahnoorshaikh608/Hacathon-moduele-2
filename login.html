@@ -13,7 +13,7 @@
 <header>
         <nav class="navbar">
 
-            <h2>🍴 RecipeHub</h2>
+            <h2 class="Recipe">🍴 RecipeHub</h2>
 
             <div class="links">
                 <a href="index.html" class="btn btn-outline-success">Home</a>
@@ -30,11 +30,24 @@
     <div class="col-12 col-md-9 col-lg-7 col-xl-7">
       <div class="card" style="border-radius: 15px">
         <div class="card-body p-5">
-          <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+          <h2 class="text-uppercase text-center mb-5">Login</h2>
 
           <form>
+
+
+ <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+              <input type="name" id="username" class="form-control form-control-lg" />
+              <label class="form-label" for="form3Example3cg" style="margin-left: 0px" >Your name </label>
+              <div class="form-notch">
+                <div class="form-notch-leading" style="width: 9px"></div>
+                <div class="form-notch-middle" style="width: 68.8px"></div>
+                <div class="form-notch-trailing"></div>
+              </div>
+            </div>
+
+
             <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
-              <input type="email" id="email" class="form-control form-control-lg" />
+              <input type="email" id="useremail" class="form-control form-control-lg" />
               <label class="form-label" for="form3Example3cg" style="margin-left: 0px" >Your Email </label>
               <div class="form-notch">
                 <div class="form-notch-leading" style="width: 9px"></div>
@@ -44,7 +57,7 @@
             </div>
 
             <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
-              <input type="password" id="password" class="form-control form-control-lg" />
+              <input type="password" id="userpassword" class="form-control form-control-lg" />
               <label class="form-label" for="form3Example4cg" style="margin-left: 0px">Password</label>
               <div class="form-notch">
                 <div class="form-notch-leading" style="width: 9px"></div>
@@ -68,7 +81,7 @@
                 Submit
               </button> -->
 
-               <button class="btn btn-outline-success">Submit</button>
+               <button id="submitbtn" class="btn btn-outline-success">Submit</button>
 
             </div>
 
@@ -90,9 +103,7 @@
     <script 
     src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
   </script>
-
-
-    <script src="./app.js"></script>
+  <script src="app.js"></script>
 
 </body>
 </html>

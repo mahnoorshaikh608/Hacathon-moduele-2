@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
@@ -13,11 +13,11 @@
 <header>
         <nav class="navbar">
 
-            <h2>🍴 RecipeHub</h2>
+            <h2 class="Recipe">🍴 RecipeHub</h2>
 
             <div class="links">
                 <a href="index.html" class="btn btn-outline-success">Home</a>
-                <a href="my-recipe.html" class="btn btn-outline-success">My Recipes</a>
+                <a href="recipes-details.html" class="btn btn-outline-success">My Recipes</a>
                 <a href="dashboard.html" class="btn btn-outline-success">Dashboard</a>
             </div>
         </nav>
@@ -31,7 +31,7 @@
 <!-- cards -->
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap; ">
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20rem;">
   <img class="card-img-top" src="./pizza.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Pizza</h5>
@@ -42,7 +42,8 @@
 
 
 
-<div class="card" style="width: 18rem;">
+<div  style="display: flex; gap: 20px; flex-wrap: wrap; " >
+    <div class="card" style="width: 20rem;">
   <img class="card-img-top" src="./burger-pic.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Burger</h5>
@@ -50,8 +51,10 @@
     <a href="recipes-details.html" class="btn btn-primary">Chech Recipe</a>
   </div>
 </div>
+</div>
 
-<div class="card" style="width: 18rem;">
+<div style="display: flex; gap: 20px; flex-wrap: wrap; " >
+    <div class="card" style="width: 20rem;">
   <img class="card-img-top" src="./biyani pic.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Biryani</h5>
@@ -59,63 +62,65 @@
     <a href="recipes-details.html" class="btn btn-primary">Chech Recipe</a>
   </div>
 </div>
-
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="./pizza.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Pizza</h5>
-    <p class="card-text">“A delicious, cheesy pizza topped with fresh ingredients and baked to perfection.” 🍕</p>
-    <a href="recipes-details.html" class="btn btn-primary">Chech Recipe</a>
-  </div>
 </div>
 
-</div>
-     <!-- <div>
-      <h1>All Recipes</h1>
 
-      <p>Discover delicious recipes for every craving!</p>
 
-      <div className="recipes">
+</div >
+     
 
-        <div className="card">
-          <img src="/pizza.jpg" alt="Pizza" />
-          <h2>Cheesy Pizza</h2>
-          <p>Delicious cheesy pizza with fresh toppings.</p>
-          <p>⏱️ 30 Minutes</p>
-          <button>View Recipe</button>
-        </div>
+   <div class="searching">
+     <div className="recipe-page">
 
-        <div className="card">
-          <img src="/burger.jpg" alt="Burger" />
-          <h2>Classic Burger</h2>
-          <p>Juicy burger with cheese and fresh vegetables.</p>
-          <p>⏱️ 20 Minutes</p>
-          <button>View Recipe</button>
-        </div>
+      <h1 class="your">Find Your Recipe</h1>
 
-        <div className="card">
-          <img src="/pasta.jpg" alt="Pasta" />
-          <h2>Creamy Pasta</h2>
-          <p>Creamy and tasty pasta made with delicious sauce.</p>
-          <p>⏱️ 25 Minutes</p>
-          <button>View Recipe</button>
-        </div>
+      <div className="search-box">
+        <input placeholder="Search recipe..." />
+        <a href="recipes-details.html" class="btn btn-outline-success">Search</a>
+      </div>
 
-        <div className="card">
-          <img src="/biryani.jpg" alt="Biryani" />
-          <h2>Chicken Biryani</h2>
-          <p>Spicy and flavorful Pakistani chicken biryani.</p>
-          <p>⏱️ 45 Minutes</p>
-          <button>View Recipe</button>
-        </div> -->
+      <div className="recipe-card">
+
+        <img src="./pizza.jpg"  width="200"/>
+
+        
 
       </div>
+
     </div>
+   </div>
 
 
 
- 
 
+
+     <div class="searching">
+
+         <div className="search-box">
+        <input placeholder="Search recipe..." />
+        <a href="recipes-details.html" class="btn btn-outline-success">Search</a>
+      
+
+      <div className="recipe-card">
+
+        <img src="./burger-pic.jpg" width="200" >
+    </div>
+     </div>
+
+
+
+
+         <div class="searching">
+             <div className="search-box">
+        <input placeholder="Search recipe..." />
+        <a href="recipes-details.html" class="btn btn-outline-success">Search</a>
+      
+
+      <div className="recipe-card">
+
+        <img src="./biyani pic.jpg" width="200" />
+    </div>
+         </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
  
