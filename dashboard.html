@@ -16,7 +16,7 @@
 
             <div class="links">
                 <a href="index.html" class="btn btn-outline-success">Home</a>
-                <a href="recipes.html" class=" btn btn-outline-success">All-recipe</a>
+                <a href="All-recipe.html" class=" btn btn-outline-success">All-recipe</a>
 
             </div>
         </nav>
@@ -27,6 +27,428 @@
     <div class="dashboard">
 
     <h1>Dashboard</h1>
+
+
+   
+    
+        <!-- ================= SIDEBAR ================= -->
+    
+        <aside class="sidebar">
+    
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="bi bi-egg-fried"></i>
+                </div>
+    
+                <div>
+                    <h2>Recipe<span>Hub</span></h2>
+                    <p>Cook • Create • Enjoy</p>
+                </div>
+            </div>
+    
+    
+            <div class="menu-section">
+    
+                <p class="menu-title">MAIN MENU</p>
+    
+                <a href="#" class="menu-item active">
+                    <i class="bi bi-house-door-fill"></i>
+                    <span>Dashboard</span>
+                </a>
+    
+                <a href="all-recipes.html" class="menu-item">
+                    <i class="bi bi-journal-text"></i>
+                    <span>All Recipes</span>
+                </a>
+    
+                <a href="#" class="menu-item">
+                    <i class="bi bi-bookmark-heart"></i>
+                    <span>My Recipes</span>
+                </a>
+    
+                <a href="#" class="menu-item">
+                    <i class="bi bi-heart"></i>
+                    <span>Favorites</span>
+                </a>
+    
+            </div>
+    
+    
+            <div class="menu-section">
+    
+                <p class="menu-title">MANAGE</p>
+    
+                <a href="#" class="menu-item" id="addRecipeMenu">
+                    <i class="bi bi-plus-circle"></i>
+                    <span>Add Recipe</span>
+                </a>
+    
+                <a href="#" class="menu-item">
+                    <i class="bi bi-tags"></i>
+                    <span>Categories</span>
+                </a>
+    
+                <a href="#" class="menu-item">
+                    <i class="bi bi-gear"></i>
+                    <span>Settings</span>
+                </a>
+    
+            </div>
+    
+    
+            <!-- Inspiration Box -->
+    
+            <div class="inspiration-box">
+    
+                <div class="bulb-icon">
+                    <i class="bi bi-lightbulb-fill"></i>
+                </div>
+    
+                <h3>Need Inspiration?</h3>
+    
+                <p>
+                    Discover delicious recipes and create something amazing.
+                </p>
+    
+                <button>
+                    Explore Recipes
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+    
+            </div>
+    
+    
+            <button class="logout-btn" id="logoutBtn">
+                <i class="bi bi-box-arrow-right"></i>
+                Logout
+            </button>
+    
+        </aside>
+    
+    
+    
+        <!-- ================= MAIN ================= -->
+    
+        <main class="main-content">
+    
+    
+            <!-- TOP BAR -->
+    
+            <header class="topbar">
+    
+                <div class="welcome-text">
+    
+                    <p>RECIPE DASHBOARD</p>
+    
+                    <h1>
+                        Good Morning, Chef! 👋
+                    </h1>
+    
+                    <span>
+                        Manage your recipes, discover new dishes,
+                        and keep your favorite meals in one place.
+                    </span>
+    
+                </div>
+    
+    
+                <div class="topbar-right">
+    
+                    <!-- Search -->
+    
+                    <div class="search-box">
+    
+                        <i class="bi bi-search"></i>
+    
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search recipes..."
+                        >
+    
+                    </div>
+    
+    
+                    <!-- Notification -->
+    
+                    <button class="notification-btn">
+    
+                        <i class="bi bi-bell"></i>
+    
+                        <span class="notification-dot">3</span>
+    
+                    </button>
+    
+    
+                    <!-- Profile -->
+    
+                    <div class="profile">
+    
+                        <div class="profile-avatar">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+    
+                        <div class="profile-info">
+                            <strong>Chef</strong>
+                            <small>Recipe Lover</small>
+                        </div>
+    
+                        <i class="bi bi-chevron-down"></i>
+    
+                    </div>
+    
+                </div>
+    
+            </header>
+    
+    
+    
+            <!-- ================= HERO ================= -->
+    
+            <section class="hero-section">
+    
+                <div class="hero-content">
+    
+                    <div class="hero-label">
+                        <i class="bi bi-star-fill"></i>
+                        Welcome Back
+                    </div>
+    
+                    <h2>
+                        Cook something
+                        <span>delicious</span> today.
+                    </h2>
+    
+                    <p>
+                        Manage your recipes, discover new dishes,
+                        and keep your favorite meals in one place.
+                    </p>
+    
+                    <button class="add-recipe-btn" id="addRecipeBtn">
+    
+                        <i class="bi bi-plus-lg"></i>
+    
+                        Add New Recipe
+    
+                    </button>
+    
+                </div>
+    
+    
+                <div class="hero-image">
+    
+                    <img
+                        src="./images/dashboard-food.png"
+                        alt="Delicious Food"
+                    >
+    
+                </div>
+    
+            </section>
+    
+    
+    
+            <!-- ================= STATS ================= -->
+    
+            <section class="stats-container">
+    
+    
+                <div class="stat-card">
+    
+                    <div class="stat-icon orange">
+                        <i class="bi bi-journal-richtext"></i>
+                    </div>
+    
+                    <div>
+                        <p>Total Recipes</p>
+    
+                        <h2 id="totalRecipes">
+                            24
+                        </h2>
+    
+                        <span class="green-text">
+                            <i class="bi bi-arrow-up"></i>
+                            12% this month
+                        </span>
+                    </div>
+    
+                </div>
+    
+    
+                <div class="stat-card">
+    
+                    <div class="stat-icon green">
+                        <i class="bi bi-person-check"></i>
+                    </div>
+    
+                    <div>
+                        <p>My Recipes</p>
+    
+                        <h2 id="myRecipes">
+                            08
+                        </h2>
+    
+                        <span class="green-text">
+                            <i class="bi bi-plus"></i>
+                            4 new recipes
+                        </span>
+                    </div>
+    
+                </div>
+    
+    
+                <div class="stat-card">
+    
+                    <div class="stat-icon pink">
+                        <i class="bi bi-heart-fill"></i>
+                    </div>
+    
+                    <div>
+                        <p>Favorites</p>
+    
+                        <h2 id="favoriteRecipes">
+                            12
+                        </h2>
+    
+                        <span>
+                            Your favorites
+                        </span>
+                    </div>
+    
+                </div>
+    
+    
+                <div class="stat-card">
+    
+                    <div class="stat-icon purple">
+                        <i class="bi bi-grid-fill"></i>
+                    </div>
+    
+                    <div>
+                        <p>Categories</p>
+    
+                        <h2 id="categoryCount">
+                            06
+                        </h2>
+    
+                        <span>
+                            All organized
+                        </span>
+                    </div>
+    
+                </div>
+    
+            </section>
+    
+    
+    
+            <!-- ================= RECENT + QUICK ACTION ================= -->
+    
+            <section class="dashboard-columns">
+    
+    
+                <!-- RECENT RECIPES -->
+    
+                <div class="recent-section">
+    
+                    <div class="section-header">
+    
+                        <div>
+                            <small>YOUR COLLECTION</small>
+                            <h2>Recent Recipes</h2>
+                        </div>
+    
+                        <a href="all-recipes.html">
+                            View All
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+    
+                    </div>
+    
+    
+                    <div class="recipe-grid" id="recipeContainer">
+    
+    
+                        <!-- Pizza -->
+    
+                        <div class="recipe-card">
+    
+                            <div class="recipe-image">
+    
+                                <img
+                                    src="./images/pizza.jpg"
+                                    alt="Cheesy Pepperoni Pizza"
+                                >
+    
+                                <button class="favorite-btn">
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+    
+                            </div>
+    
+    
+                            <div class="recipe-details">
+    
+                                <span class="recipe-tag">
+                                    Fast Food
+                                </span>
+    
+                                <h3>
+                                    Cheesy Pepperoni Pizza
+                                </h3>
+    
+                                <div class="recipe-meta">
+    
+                                    <span>
+                                        <i class="bi bi-clock"></i>
+                                        30 min
+                                    </span>
+    
+                                    <span>
+                                        <i class="bi bi-star-fill"></i>
+                                        4.9
+                                    </span>
+    
+                                </div>
+    
+    
+                                <div class="card-buttons">
+    
+                                    <button class="edit-btn">
+                                        <i class="bi bi-pencil"></i>
+                                        Edit
+                                    </button>
+    
+                                    <button class="delete-btn">
+                                        <i class="bi bi-trash3"></i>
+                                        Delete
+                                    </button>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <!-- Biryani -->
+    
+                        <div class="recipe-card">
+    
+                            <div class="recipe-image">
+    
+                                <img
+                                    src="./images/biryani.jpg"
+                                    alt="Chicken Biryani"
+                                >
+    
+                                <button class="favorite-btn">
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+    
+    
+
 <br>
     <button class="dashboard-btn" class="btn btn-primary" onclick="showOptions()">Dashboard</button>
 

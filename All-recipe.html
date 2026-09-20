@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RecipeHub | All Recipes</title>
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="./css/all-recipes.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
+
+    <section class="page-header">
+
+        <div class="header-content">
+
+            <span class="small-heading">
+                <i class="bi bi-stars"></i>
+                RECIPEHUB
+            </span>
+
+            <h1>Explore All Recipes</h1>
+
+            <p>
+                Discover delicious recipes, find your favorites,
+                and create something amazing in your kitchen.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SEARCH & ADD SECTION
+    ========================== -->
+
+    <section class="recipe-tools">
+
+        <div class="search-wrapper">
+
+            <i class="bi bi-search"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search recipes..."
+            >
+
+        </div>
+
+
+        <button id="addRecipeBtn" class="add-recipe-btn">
+
+            <i class="bi bi-plus-lg"></i>
+
+            Add Recipe
+
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         CATEGORY FILTERS
+    ========================== -->
+
+    <section class="categories">
+
+        <button class="category-btn active">
+            All Recipes
+        </button>
+
+        <button class="category-btn">
+            Breakfast
+        </button>
+
+        <button class="category-btn">
+            Lunch
+        </button>
+
+        <button class="category-btn">
+            Dinner
+        </button>
+
+        <button class="category-btn">
+            Fast Food
+        </button>
+
+        <button class="category-btn">
+            Desserts
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         RECIPES
+    ========================== -->
+
+    <main class="recipes-section">
+
+        <div class="section-title">
+
+            <div>
+                <span>OUR COLLECTION</span>
+                <h2>All Recipes</h2>
+            </div>
+
+            <p id="recipeCount">
+                4 Recipes
+            </p>
+
+        </div>
+
+
+        <div
+            class="recipes-grid"
+            id="recipesContainer"
+        >
+
+
+            <!-- =========================
+                 PIZZA
+            ========================== -->
+
+            <article class="recipe-card">
+
+                <div class="recipe-image">
+
+                    <img
+                        src="./pizza.jpg"
+                        alt="Pizza"
+                    >
+
+                    <span class="recipe-category">
+                        Fast Food
+                    </span>
+
+                </div>
+
+
+                <div class="recipe-info">
+
+                    <h3>Cheesy Pizza</h3>
+
+                    <p>
+                        A delicious cheesy pizza loaded with
+                        fresh vegetables and tasty toppings.
+                    </p>
+
+
+                    <div class="recipe-meta">
+
+                        <span>
+                            <i class="bi bi-clock"></i>
+                            30 min
+                        </span>
+
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                            4.8
+                        </span>
+
+                    </div>
+
+
+                    <div class="recipe-actions">
+
+                        <button class="edit-btn">
+
+                            <i class="bi bi-pencil-square"></i>
+
+                            Edit
+
+                        </button>
+
+                        <button class="delete-btn">
+
+                            <i class="bi bi-trash3"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 BURGER
+            ========================== -->
+
+            <article class="recipe-card">
+
+                <div class="recipe-image">
+
+                    <img
+                        src="./burger-pic.jpg"
+                        alt="Zinger Burger"
+                    >
+
+                    <span class="recipe-category">
+                        Fast Food
+                    </span>
+
+                </div>
+
+
+                <div class="recipe-info">
+
+                    <h3>Zinger Burger</h3>
+
+                    <p>
+                        Crispy chicken with fresh lettuce,
+                        cheese and creamy sauce.
+                    </p>
+
+
+                    <div class="recipe-meta">
+
+                        <span>
+                            <i class="bi bi-clock"></i>
+                            25 min
+                        </span>
+
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                            4.9
+                        </span>
+
+                    </div>
+
+
+                    <div class="recipe-actions">
+
+                        <button class="edit-btn">
+
+                            <i class="bi bi-pencil-square"></i>
+
+                            Edit
+
+                        </button>
+
+                        <button class="delete-btn">
+
+                            <i class="bi bi-trash3"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 BIRYANI
+            ========================== -->
+
+            <article class="recipe-card">
+
+                <div class="recipe-image">
+
+                    <img
+                        src="./biyani pic.jpg"
+                        alt="Biryani"
+                    >
+
+                    <span class="recipe-category">
+                        Dinner
+                    </span>
+
+                </div>
+
+
+                <div class="recipe-info">
+
+                    <h3>Chicken Biryani</h3>
+
+                    <p>
+                        Aromatic basmati rice cooked with
+                        chicken, herbs and traditional spices.
+                    </p>
+
+
+                    <div class="recipe-meta">
+
+                        <span>
+                            <i class="bi bi-clock"></i>
+                            55 min
+                        </span>
+
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                            4.9
+                        </span>
+
+                    </div>
+
+
+                    <div class="recipe-actions">
+
+                        <button class="edit-btn">
+
+                            <i class="bi bi-pencil-square"></i>
+
+                            Edit
+
+                        </button>
+
+                        <button class="delete-btn">
+
+                            <i class="bi bi-trash3"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 PASTA
+            ========================== -->
+
+            <article class="recipe-card">
+
+                <div class="recipe-image">
+
+                    <img
+                        src="./pasta pic.jpg"
+                        alt="Creamy Pasta"
+                    >
+
+                    <span class="recipe-category">
+                        Lunch
+                    </span>
+
+                </div>
+
+
+                <div class="recipe-info">
+
+                    <h3>Creamy Pasta</h3>
+
+                    <p>
+                        Creamy and flavorful pasta prepared
+                        with delicious sauce and fresh herbs.
+                    </p>
+
+
+                    <div class="recipe-meta">
+
+                        <span>
+                            <i class="bi bi-clock"></i>
+                            25 min
+                        </span>
+
+                        <span>
+                            <i class="bi bi-star-fill"></i>
+                            4.7
+                        </span>
+
+                    </div>
+
+
+                    <div class="recipe-actions">
+
+                        <button class="edit-btn">
+
+                            <i class="bi bi-pencil-square"></i>
+
+                            Edit
+
+                        </button>
+
+                        <button class="delete-btn">
+
+                            <i class="bi bi-trash3"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- NO RESULT -->
+
+        <div
+            class="no-result"
+            id="noResult"
+        >
+
+            <i class="bi bi-search"></i>
+
+            <h3>No Recipe Found</h3>
+
+            <p>
+                Try searching with another recipe name.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         ADD / EDIT MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="recipeModal"
+    >
+
+        <div class="modal-content">
+
+
+            <button
+                class="modal-close"
+                id="closeModalBtn"
+            >
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+
+            <div class="modal-heading">
+
+                <span>
+                    RECIPEHUB
+                </span>
+
+                <h2 id="modalTitle">
+                    Add New Recipe
+                </h2>
+
+                <p>
+                    Add your delicious recipe to the collection.
+                </p>
+
+            </div>
+
+
+            <!-- Recipe Name -->
+
+            <div class="form-group">
+
+                <label>
+                    Recipe Name
+                </label>
+
+                <div class="input-box">
+
+                    <i class="bi bi-egg-fried"></i>
+
+                    <input
+                        type="text"
+                        id="recipeName"
+                        placeholder="e.g. Chicken Karahi"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Image -->
+
+            <div class="form-group">
+
+                <label>
+                    Image URL
+                </label>
+
+                <div class="input-box">
+
+                    <i class="bi bi-image"></i>
+
+                    <input
+                        type="text"
+                        id="recipeImage"
+                        placeholder="Enter image URL"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Description -->
+
+            <div class="form-group">
+
+                <label>
+                    Description
+                </label>
+
+                <textarea
+                    id="recipeDescription"
+                    placeholder="Write something about your recipe..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- Modal Buttons -->
+
+            <div class="modal-buttons">
+
+                <button
+                    class="cancel-btn"
+                    id="closeModalBtn2"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    class="save-btn"
+                    id="saveRecipeBtn"
+                >
+                    <i class="bi bi-plus-lg"></i>
+                    Add Recipe
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Your JavaScript -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./js/all-recipes.js"></script>
+
+</body>
+
+</html>
