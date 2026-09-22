@@ -1,0 +1,688 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8ef;
+    color: #26352b;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 75px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #315c3b;
+}
+
+.logo span {
+    margin-left: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #3c754b;
+}
+
+.add-btn {
+    border: none;
+    background: #3f754c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #315e3c;
+    transform: translateY(-2px);
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+    width: 88%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    margin-top: 45px;
+    padding: 45px;
+    background: linear-gradient(
+        135deg,
+        #eef5d8,
+        #fffdf0
+    );
+    border-radius: 25px;
+}
+
+.small-title {
+    color: #6d8d45;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #294b32;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: #6d963d;
+}
+
+.hero p {
+    color: #69736b;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+
+/* ================= SEARCH ================= */
+
+.search-section {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.search-box {
+    flex: 1;
+    background: white;
+    border: 1px solid #e2e7d8;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+}
+
+.search-box i {
+    color: #70904b;
+    font-size: 20px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.filter-btn {
+    border: none;
+    background: #e9f0d7;
+    color: #426442;
+    padding: 0 25px;
+    border-radius: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ================= CATEGORIES ================= */
+
+.categories {
+    margin-top: 40px;
+}
+
+.categories h2 {
+    color: #304c35;
+    margin-bottom: 18px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.category {
+    border: 1px solid #dfe8ce;
+    background: white;
+    color: #557052;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover,
+.category.active {
+    background: #4c8053;
+    color: white;
+    border-color: #4c8053;
+}
+
+
+/* ================= RECIPE HEADING ================= */
+
+.recipe-heading {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.recipe-heading h2 {
+    color: #294b32;
+    font-size: 30px;
+}
+
+.recipe-heading > p {
+    color: #78905f;
+    font-weight: bold;
+}
+
+
+/* ================= RECIPE GRID ================= */
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-bottom: 60px;
+}
+
+
+/* ================= RECIPE CARD ================= */
+
+.recipe-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 7px 25px rgba(52, 82, 54, 0.08);
+    transition: 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(52, 82, 54, 0.15);
+}
+
+
+/* ================= RECIPE IMAGE ================= */
+
+.recipe-image {
+    height: 190px;
+    background: linear-gradient(
+        135deg,
+        #dfecc5,
+        #fff4c9
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.food-icon {
+    font-size: 85px;
+}
+
+.category-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    color: #527345;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.heart-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    color: #618057;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+/* ================= RECIPE CONTENT ================= */
+
+.recipe-content {
+    padding: 22px;
+}
+
+.recipe-content h3 {
+    color: #294b32;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.recipe-content p {
+    color: #737b74;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 65px;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: space-between;
+    color: #71845f;
+    font-size: 13px;
+    margin: 15px 0;
+}
+
+.view-btn {
+    width: 100%;
+    border: none;
+    background: #edf3df;
+    color: #426542;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: #4d7d50;
+    color: white;
+}
+
+
+/* ================= MODAL ================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(30, 50, 35, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.modal-content {
+    width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.modal-content h2 {
+    color: #315d3b;
+    margin-bottom: 20px;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    border: 1px solid #dce5d2;
+    border-radius: 10px;
+    padding: 13px;
+    margin-bottom: 14px;
+    outline: none;
+}
+
+.modal-content textarea {
+    height: 100px;
+    resize: none;
+}
+
+.close-btn {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    border: none;
+    background: #edf3df;
+    color: #426542;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.save-btn {
+    width: 100%;
+    border: none;
+    background: #4c7d50;
+    color: white;
+    padding: 13px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: auto;
+        padding: 18px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        padding: 13px;
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+
+
+/* ================= EDIT & DELETE BUTTONS ================= */
+
+.edit-btn,
+.delete-btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.edit-btn {
+    background: #e8f0d8;
+    color: #426542;
+    margin-right: 8px;
+}
+
+.edit-btn:hover {
+    background: #4c7d50;
+    color: white;
+}
+
+.delete-btn {
+    background: #f8e2df;
+    color: #b04b42;
+}
+
+.delete-btn:hover {
+    background: #c95c50;
+    color: white;
+}
+
+
+
+
+
+/* ================= VIEW RECIPE MODAL ================= */
+
+.view-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(30, 50, 35, 0.55);
+    backdrop-filter: blur(5px);
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 300;
+    padding: 20px;
+}
+
+.view-modal-content {
+    width: 480px;
+    max-width: 100%;
+
+    background: white;
+    border-radius: 25px;
+    padding: 35px;
+
+    text-align: center;
+
+    position: relative;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+
+    animation: viewModalShow 0.3s ease;
+}
+
+
+/* Food Icon */
+
+.view-food-icon {
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #dfecc5,
+        #fff4c9
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 60px;
+}
+
+
+/* Category */
+
+.view-category {
+    display: inline-block;
+
+    background: #edf3df;
+    color: #4c754c;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+/* Recipe Name */
+
+.view-modal-content h2 {
+    color: #294b32;
+
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Description */
+
+.view-modal-content p {
+    color: #737b74;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+}
+
+
+/* Time & Rating */
+
+.view-recipe-info {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e5eadf;
+
+    color: #617654;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* Close Button */
+
+.view-close-btn {
+    position: absolute;
+
+    right: 18px;
+    top: 18px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #edf3df;
+
+    color: #426542;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.view-close-btn:hover {
+    background: #4c7d50;
+    color: white;
+}
+
+
+/* Animation */
+
+@keyframes viewModalShow {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .view-modal-content {
+        padding: 28px 20px;
+    }
+
+    .view-modal-content h2 {
+        font-size: 23px;
+    }
+
+    .view-food-icon {
+        width: 90px;
+        height: 90px;
+        font-size: 50px;
+    }
+
+}
